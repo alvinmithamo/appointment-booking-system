@@ -1,0 +1,38 @@
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel-quote {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.carousel-author {
+    font-size: 1rem;
+    color: #555;
+}
+
+.carousel-item.active {
+    opacity: 1;
+}
+
+.carousel-item {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
